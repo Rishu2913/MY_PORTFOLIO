@@ -1,35 +1,3 @@
-/* === CUSTOM CURSOR === */
-const cursor = document.getElementById('cursor');
-const cursorDot = document.getElementById('cursorDot');
-let mx = 0, my = 0, cx = 0, cy = 0;
-
-document.addEventListener('mousemove', e => {
-  mx = e.clientX; my = e.clientY;
-  cursorDot.style.left = mx + 'px';
-  cursorDot.style.top  = my + 'px';
-});
-
-(function animateCursor() {
-  cx += (mx - cx) * 0.11;
-  cy += (my - cy) * 0.11;
-  cursor.style.left = cx + 'px';
-  cursor.style.top  = cy + 'px';
-  requestAnimationFrame(animateCursor);
-})();
-
-document.querySelectorAll('a,button,.proj-card,.cert-card,.edu-card,.contact-card,.btn,.skill-group').forEach(el => {
-  el.addEventListener('mouseenter', () => {
-    cursor.style.transform = 'translate(-50%,-50%) scale(1.7)';
-    cursor.style.background = 'rgba(139,92,246,0.12)';
-    cursor.style.borderColor = 'var(--purple-l)';
-  });
-  el.addEventListener('mouseleave', () => {
-    cursor.style.transform = 'translate(-50%,-50%) scale(1)';
-    cursor.style.background = 'transparent';
-    cursor.style.borderColor = 'var(--purple)';
-  });
-});
-
 /* === SCROLL REVEAL === */
 const selectors = [
   '.hero-text','.hero-photo-col',
