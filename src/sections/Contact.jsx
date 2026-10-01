@@ -24,7 +24,7 @@ export default function Contact() {
             </p>
 
             <a
-              href="mailto:YOUR_EMAIL_HERE"
+              href="mailto:rishu.raj.singh1918@gmail.com"
               className="contact-cta"
             >
               GET IN TOUCH
