@@ -1,4 +1,3 @@
-
 export default function Contact() {
   return (
     <>
@@ -23,12 +22,23 @@ export default function Contact() {
               to learn and collaborate.
             </p>
 
+            {/* Contact Button */}
             <a
-              href="mailto:YOUR_EMAIL_HERE"
+              href="mailto:rishu.raj.singh1918@gmail.com"
               className="contact-cta"
             >
               GET IN TOUCH
               <span aria-hidden="true">↗</span>
+            </a>
+
+            {/* Download Resume Button */}
+            <a
+              href="/resume.pdf"
+              download="Rishu_Raj_Singh_Resume.pdf"
+              className="resume-download"
+            >
+              DOWNLOAD RESUME
+              <span aria-hidden="true">↓</span>
             </a>
           </div>
         </div>
@@ -48,6 +58,7 @@ export default function Contact() {
             >
               GitHub ↗
             </a>
+
             <a
               href="https://www.linkedin.com/in/rishu-raj-singh-10647b3ab/"
               target="_blank"
@@ -55,6 +66,7 @@ export default function Contact() {
             >
               LinkedIn ↗
             </a>
+
             <a href="mailto:rishu.raj.singh1918@gmail.com">
               Email ↗
             </a>
